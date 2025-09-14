@@ -1,2 +1,2 @@
-# Movie-reccomendation-system
-Its a advanced movie reccomendation system in which we can see the information,ratings and watch the trailer too
+# CineVerse - Movie-reccomendation-system
+CineVerse is a sleek and interactive movie recommendation web application built with Python and the Streamlit framework. It suggests personalized movie titles based on your selection, while also displaying a dynamic list of trending films. The app enriches its recommendations with real-time data—including posters, ratings, and trailers—by integrating with The Movie Database (TMDb) API.
