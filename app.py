@@ -2,13 +2,15 @@ import pickle
 import streamlit as st
 import requests
 from streamlit_lottie import st_lottie
+import numpy as np
 
 
 API_KEY = "5f7a6e8268da566eed84b43273c332bb"
 
 
 movies = pickle.load(open("movie_list.pkl", "rb"))
-similarity = pickle.load(open("similarity.pkl", "rb"))
+data = np.load("similarity.npz", allow_pickle=True)
+similarity = data["similarity"]
 
 
 st.set_page_config(
@@ -164,3 +166,4 @@ for i in range(0, len(trending_movies), 5):
 
 
 st.markdown("<div class='footer'>🎬 Made by Abhiram | CineVerse 2025</div>", unsafe_allow_html=True)
+
